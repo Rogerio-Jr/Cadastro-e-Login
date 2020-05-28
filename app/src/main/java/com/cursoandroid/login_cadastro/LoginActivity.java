@@ -14,7 +14,5 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void btEntrar(View view){
-        startActivity(new Intent(this, MenuPrincialActivity.class));
-    }
+
 }

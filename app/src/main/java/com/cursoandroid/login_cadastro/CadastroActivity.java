@@ -14,9 +14,6 @@ public class CadastroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
     }
 
-    public void btCadastro(View view){
-        startActivity(new Intent(this, MenuPrincialActivity.class));
-    }
 
     public void btJaCadastrado(View view){
         startActivity( new Intent(this, LoginActivity.class));
