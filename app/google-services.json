@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "479738768950",
+    "firebase_url": "https://cadastrologin-f93b2.firebaseio.com",
+    "project_id": "cadastrologin-f93b2",
+    "storage_bucket": "cadastrologin-f93b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479738768950:android:11ea5276ae3c9c04faf297",
+        "android_client_info": {
+          "package_name": "com.cursoandroid.login_cadastro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479738768950-hganpj09gkseldvcrckoo0v4bil4lctn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cursoandroid.login_cadastro",
+            "certificate_hash": "769315c04151113ee490fe4ee30dd3411e3d013f"
+          }
+        },
+        {
+          "client_id": "479738768950-8a5vnfrsq3lg30tiu7ba7hnlhq2r5rbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGs7VCoqYSsX2PUhRiSwLbdOTEvcfC_HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479738768950-8a5vnfrsq3lg30tiu7ba7hnlhq2r5rbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,8 +1,10 @@
-package com.cursoandroid.login_cadastro;
+package com.cursoandroid.login_cadastro.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.cursoandroid.login_cadastro.R;
 
 public class MenuPrincialActivity extends AppCompatActivity {
 
