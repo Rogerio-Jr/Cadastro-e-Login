@@ -33,6 +33,8 @@ public class  CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro) ;
 
+        verificarUsuarioLogado();
+
         campoNome = findViewById(R.id.editNomeC);
         campoEmail = findViewById(R.id.editEmailC);
         campoSenha = findViewById(R.id.editSenhaC);
@@ -83,8 +85,10 @@ public class  CadastroActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(CadastroActivity.this, "Sucesso ao cadastrar usuario!",
-                            Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(CadastroActivity.this, MenuPrincialActivity.class);
+                    startActivity(i);
+                    finish();
+
                 }else {
                     String excecao = "";
                     try {
@@ -109,6 +113,22 @@ public class  CadastroActivity extends AppCompatActivity {
 
 
     public void btJaCadastrado(View view){
-        startActivity( new Intent(this, LoginActivity.class));
+        startActivity( new Intent(this,
+                LoginActivity.class));
+    }
+    public void verificarUsuarioLogado(){
+        autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
+        //autenticacao.signOut();
+        if (autenticacao.getCurrentUser() != null){
+            abrirMenuPrincipal();
+
+        }
+    }
+    public void abrirMenuPrincipal(){
+        Intent i = new Intent(CadastroActivity.this, MenuPrincialActivity.class);
+        startActivity(i);
+        finish();
+
     }
 }
+
