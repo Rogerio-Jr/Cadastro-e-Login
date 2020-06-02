@@ -66,7 +66,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:background="#00BCD4"
+        android:background="#4CAF50"
         android:text="Entrar"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
